@@ -11,7 +11,7 @@ namespace App\Niu\Transformers;
 
 
 
-use App\Consultant;
+use App\Models\Consultant;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Components\Passive\Utilities;

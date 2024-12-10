@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $name
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\PropertyBlock[] $propertyBlocks
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\PropertyBlock[] $propertyBlocks
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Development whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Development whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Development whereName($value)
@@ -39,7 +39,7 @@ class Development extends Model
 	 */
 	public function propertyBlocks()
 	{
-		return $this->hasMany('App\PropertyBlock', 'development_id', 'id');
+		return $this->hasMany('App\Models\PropertyBlock', 'development_id', 'id');
 	}
 
 	/**
@@ -47,6 +47,6 @@ class Development extends Model
 	 */
 	public function properties()
 	{
-		return $this->hasManyThrough(Property::class, 'App\PropertyBlock', 'development_id', 'property_block_id_field');
+		return $this->hasManyThrough(Property::class, 'App\Models\PropertyBlock', 'development_id', 'property_block_id_field');
 	}
 }

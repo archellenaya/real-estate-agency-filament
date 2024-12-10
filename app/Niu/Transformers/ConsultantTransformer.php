@@ -10,7 +10,7 @@
 namespace App\Niu\Transformers;
 
 use App\Niu\Transformers\Transformer;
-use App\Consultant;
+use App\Models\Consultant;
 use Illuminate\Support\Facades\Log;
 
 class ConsultantTransformer extends Transformer

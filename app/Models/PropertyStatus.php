@@ -3,7 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * App\PropertyStatus
+ * App\Models\PropertyStatus
  *
  * @property integer $id
  * @property string $description

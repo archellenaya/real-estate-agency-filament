@@ -10,7 +10,7 @@
 namespace App\Niu\Transformers;
 
 use App\Niu\Transformers\Transformer;
-use App\Consultant;
+use App\Models\Consultant;
 
 class AgentCodeTransformer extends Transformer
 {

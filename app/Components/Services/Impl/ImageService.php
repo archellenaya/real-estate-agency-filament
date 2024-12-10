@@ -15,7 +15,7 @@ use DateTime;
 use Exception;
 use Illuminate\Support\Facades\Response;
 use App\File;
-use App\Consultant;
+use App\Models\Consultant;
 use function PHPUnit\Framework\throwException;
 use App\Components\Passive\Utilities;
 use Carbon\Carbon;

@@ -2,7 +2,7 @@
 
 namespace App\Components\Repositories\Impl;
 
-use App\Locality;
+use App\Models\Locality;
 use App\Models\Region;
 use App\Constants\Components\Regions;
 use App\Constants\Components\RegionValues;

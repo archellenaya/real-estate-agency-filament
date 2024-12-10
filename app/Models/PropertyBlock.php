@@ -6,7 +6,7 @@ use App\Models\Property;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * App\PropertyBlock
+ * App\Models\PropertyBlock
  *
  * @property int                                                           $id
  * @property int                                                           $development_id
@@ -18,19 +18,19 @@ use Illuminate\Database\Eloquent\Model;
  * @property string                                                        $longitude
  * @property \Carbon\Carbon                                                $created_at
  * @property \Carbon\Carbon                                                $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereAbstract( $value )
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereCreatedAt( $value )
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereDevelopmentId( $value )
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereId( $value )
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereLatLong( $value )
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereLongDescription( $value )
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereShortDescription( $value )
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereTitle( $value )
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereUpdatedAt( $value )
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereAbstract( $value )
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereCreatedAt( $value )
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereDevelopmentId( $value )
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereId( $value )
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereLatLong( $value )
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereLongDescription( $value )
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereShortDescription( $value )
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereTitle( $value )
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereUpdatedAt( $value )
  * @mixin \Eloquent
  * @property-read \App\Development $development
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereLatitude($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\PropertyBlock whereLongitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereLatitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\PropertyBlock whereLongitude($value)
  */
 class PropertyBlock extends Model
 {

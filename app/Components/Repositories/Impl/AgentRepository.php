@@ -3,7 +3,7 @@
 namespace App\Components\Repositories\Impl;
 
 use App\Components\Repositories\IAgentRepository;
-use App\Consultant;
+use App\Models\Consultant;
 
 
 class AgentRepository implements IAgentRepository

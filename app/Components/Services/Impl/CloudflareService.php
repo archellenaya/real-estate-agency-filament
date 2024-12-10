@@ -3,7 +3,7 @@
 namespace App\Components\Services\Impl;
 
 use App\Components\Services\ICloudflareService;
-use App\Consultant;
+use App\Models\Consultant;
 use Exception;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;

@@ -24,7 +24,7 @@ class Region extends Model
 
     public function localities()
     {
-        return $this->hasMany('App\Locality', 'region_id', 'id');
+        return $this->hasMany('App\Models\Locality', 'region_id', 'id');
     }
     public function zones()
     {

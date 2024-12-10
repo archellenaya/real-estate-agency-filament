@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Locality;
+use App\Models\Locality;
 use Carbon\Carbon;
 use App\Models\File;
 use App\Models\User;
@@ -128,17 +128,17 @@ class Property extends Model
 
 	public function features()
 	{
-		return $this->belongsToMany('App\Feature')->withPivot('feature_value');
+		return $this->belongsToMany('App\Models\Feature')->withPivot('feature_value');
 	}
 
 	public function features_filter()
 	{
-		return $this->belongsToMany('App\Feature');
+		return $this->belongsToMany('App\Models\Feature');
 	}
 
 	public function consultant()
 	{
-		return $this->belongsTo('App\Consultant');
+		return $this->belongsTo('App\Models\Consultant');
 	}
 
 	public function property_type()
@@ -147,12 +147,12 @@ class Property extends Model
 	}
 	public function propertyBlock()
 	{
-		return $this->belongsTo('App\PropertyBlock', 'property_block_id_field');
+		return $this->belongsTo('App\Models\PropertyBlock', 'property_block_id_field');
 	}
 
 	public function property_status()
 	{
-		return $this->belongsTo('App\PropertyStatus', 'property_status_id_field', 'id');
+		return $this->belongsTo('App\Models\PropertyStatus', 'property_status_id_field', 'id');
 	}
 
 	public function files(): HasMany

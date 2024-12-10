@@ -23,20 +23,20 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property boolean $is_available
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant wherefull_name_field($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant whereimage_file_name_field($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant whereimage_name_field($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant wherebranch_id_field($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant wheredescription_field($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant wheredesignation_field($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant whereUpdatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Consultant whereis_available($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant wherefull_name_field($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant whereimage_file_name_field($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant whereimage_name_field($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant wherebranch_id_field($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant wheredescription_field($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant wheredesignation_field($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Consultant whereis_available($value)
  * @property string $contact_number_field
  * @property string $email_field
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Consultant wherecontact_number_field($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Consultant whereemail_field($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Consultant wherecontact_number_field($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Consultant whereemail_field($value)
  * @mixin \Eloquent
  */
 class Consultant extends Model
